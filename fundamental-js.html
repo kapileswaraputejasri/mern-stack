@@ -1,0 +1,65 @@
+<html>
+    <head>
+    <script>
+        function show()
+        {
+            document.write("welcome to js");
+        }
+    </script>
+    </head>
+    <body onload="show();">
+        welcome to javascript
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Check</title>
+</head>
+<body>
+    <h2>Login Form</h2>
+
+    <label>Username:</label>
+    <input type="text" id="username"><br><br>
+
+    <label>Password:</label>
+    <input type="password" id="password"><br><br>
+
+    <button onclick="checkLogin()">Login</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkLogin() {
+            // Set correct username and password
+            let correctUsername = "admin";
+            let correctPassword = "12345";
+
+            // Get user input
+            let enteredUsername = document.getElementById("username").value;
+            let enteredPassword = document.getElementById("password").value;
+
+            // Check if correct
+            if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
+                document.getElementById("result").innerHTML = "✅ Login Successful!";
+                document.getElementById("result").style.color = "green";
+            } else {
+                document.getElementById("result").innerHTML = "❌ Invalid username or password";
+                document.getElementById("result").style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

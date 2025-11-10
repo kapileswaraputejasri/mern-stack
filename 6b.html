@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Output </title>
+</head>
+<body>
+
+<h2 id="display"></h2>
+
+<script>
+  //  user input
+  let name = prompt("What is your name?");
+
+  //  Print to browser console
+  console.log("User entered name: " + name);
+
+  //  Write directly to the webpage
+  document.write("<p>Hello " + name + ", this is from document.write!</p>");
+
+  //  Popup alert box
+  alert("Welcome " + name + "! This is an alert message.");
+
+  //  Change HTML content inside an element
+  document.getElementById("display").innerHTML = "Displayed using innerHTML: Hello, " + name + "!";
+</script>
+
+</body>
+</html>
