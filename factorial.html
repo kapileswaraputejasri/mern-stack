@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function fact() { 
+    let n = parseInt(prompt("Enter the number:"));
+
+    if (isNaN(n) || n < 0) {
+        alert("Factorial is not possible for negative numbers!");
+        return;
+    }
+
+    let fact = 1;
+    for (let i = 2; i <= n; i++) {
+        fact *= i;
+    }
+     document.write("factorial=" + fact);
+}
+</script>
+</head>
+<body onclick="fact();">
+<button>click</button>
+</body>
+</html>
+

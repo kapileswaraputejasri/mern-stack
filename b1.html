@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function fact() { 
+    let n = parseInt(prompt("Enter the number:"));
+
+    if (isNaN(n) || n < 0) {
+        document.write("Enter a non-negative number!");
+        return;
+    }
+
+    let fact = 1;
+    for (let i = 2; i <= n; i++) {
+        fact *= i;
+    }
+
+    document.write("Factorial of " + n + " = " + fact);
+}
+</script>
+</head>
+<body>
+    <h2>Factorial Calculator</h2>
+    <button onclick="fact()">Click to Calculate Factorial</button>
+</body>
+</html>

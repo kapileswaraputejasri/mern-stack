@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script>
+       function fib(n) { 
+         if(n==0)
+            return 0;
+    
+         if (n==1) 
+            return 1;
+            return  fib(n-1)+fib(n-2);
+        }
+       function fibnumber()
+       {
+            let n=parseInt(prompt("enter the number"));
+            if(isNaN(n) || n<0)
+              {
+                  alert("negative number");
+                  return ;
+              }
+        let result = fib(n);
+        document.write("fibonacci number" +result);
+}
+</script>
+</head>
+<body onclick="fibnumber();"> >
+<button >click</button>
+</body>
+</html>
+
