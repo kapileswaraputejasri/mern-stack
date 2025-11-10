@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>date object</title>
+</head>
+
+<body>
+    <script>
+        var d = new Date();
+        document.write(d + "<br>");
+        document.write(d.getFullYear() + "<br>");
+        document.write(d.getDate() + "<br>");
+        document.write(d.getDay() + "<br>");
+        document.write(d.getYear() + "<br>");
+        document.write(d.getMonth() + "<br>");
+        document.write(d.getHours() + "<br>");
+        document.write(d.getMinutes() + "<br>");
+        document.write(d.getSeconds() + "<br>");
+        document.write(d.getMilliseconds() + "<br>");
+        let d2 = new Date();
+        d2.setFullYear(2030, 5, 15); // June 15, 2030
+        document.write(" setFullYear(): " + d2 + "<br>");
+
+        d2.setMonth(11); // December
+        document.write(" setMonth(): " + d2 + "<br>");
+
+        d2.setDate(20); // 20th day
+        document.write(" setDate(): " + d2 + "<br>");
+
+        d2.setHours(10);
+        document.write(" setHours(): " + d2 + "<br>");
+
+        d2.setMinutes(45);
+        document.write("setMinutes(): " + d2 + "<br>");
+
+        document.write(" toDateString(): " + d.toDateString() + "<br>");
+    </script>
+</body>
+
+</html>
